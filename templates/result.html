@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Prediction Result</h1>
+
+        <div class="result-box">
+          <h2>{{ prediction }}</h2>
+
+          <p class="confidence">Confidence: {{ confidence }}%</p>
+        </div>
+
+        <a class="retry" href="/">Upload Another Image</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Urban Damage Detection</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Urban Infrastructure Damage Detection</h1>
+
+        <p class="subtitle">
+          Upload an aerial image of a building to detect structural damage
+        </p>
+
+        <form action="/predict" method="post" enctype="multipart/form-data">
+          <input type="file" name="image" required />
+
+          <br /><br />
+
+          <button type="submit">Analyze Image</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
